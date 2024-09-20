@@ -1,0 +1,43 @@
+<div class="mainDiv">
+    <div class="innerDiv1">
+      <div class="text">
+        <img src="https://templates.iqonic.design/xray/html/images/logo-white.png" alt="Logo">
+      </div>
+      <img src="https://templates.iqonic.design/xray/html/images/login/3.png" alt="Description of image" class="main-image">
+      <h2 class="title" style="margin-right: 30%; color: aliceblue;">Manage your order</h2>
+      <div class="description" style="margin-right: 30%; color: aliceblue; width: 50%; display: flex; justify-content: center; text-align: center;">
+        It is a long established fact that a reader will be distracted by the readable content.
+      </div>
+    </div>
+    <div class="innerDiv2">
+      <div class="sign-in-from">
+        <h1 class="mb-0">Sign in</h1>
+        <p>Enter your email address and password to access the admin panel.</p>
+        <form class="mt-4" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+          <div class="form-group">
+            <label for="exampleInputEmail1" class="mb-2">Email address</label>
+            <input type="email" class="form-control mb-0" id="exampleInputEmail1" placeholder="Enter email" formControlName="email">
+            <div *ngIf="loginForm.get('email')?.invalid && loginForm.get('email')?.touched">
+              Email is required and must be valid.
+            </div>
+          </div>
+          <div class="d-flex justify-content-between my-2">
+            <label for="exampleInputPassword1">Password</label>
+            <a class="float-end" style="color: #089bab;">Forgot password?</a>
+          </div>
+          <input type="password" class="form-control mb-0" id="exampleInputPassword1" placeholder="Password" formControlName="password">
+          <div *ngIf="loginForm.get('password')?.invalid && loginForm.get('password')?.touched">
+            Password is required.
+          </div>
+          <div class="d-flex w-100 justify-content-between align-items-center mt-3">
+            <div class="custom-control custom-checkbox d-inline-block mt-2 pt-1">
+              <input type="checkbox" class="custom-control-input" id="customCheck1">
+              <label class="custom-control-label" for="customCheck1">Remember Me</label>
+            </div>
+            <button type="submit" [disabled]="loginForm.invalid" class="btn btn-primary float-end" style="background-color: #089bab; border: none;">Sign in</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  

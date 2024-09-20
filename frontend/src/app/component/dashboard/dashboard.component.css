@@ -1,0 +1,77 @@
+body {
+    font-family: 'Arial', sans-serif;
+    transition: background-color 0.5s, color 0.5s;
+  }
+  
+  #sidebar-wrapper {
+    min-height: 100vh;
+  }
+  
+  .sidebar-heading {
+    padding: 20px;
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  
+  .list-group-item {
+    border: none;
+    transition: background-color 0.3s;
+  }
+  
+  .list-group-item:hover {
+    background-color: #495057;
+  }
+  
+  .card {
+    border-radius: 10px;
+    transition: transform 0.3s;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .card-text {
+    font-size: 1rem;
+  }
+  
+  #menu-toggle {
+    margin-left: 15px;
+  }
+  
+  .dark-mode {
+    background-color: #343a40;
+    color: white;
+  }
+  
+  .dark-mode .bg-dark {
+    background-color: #495057 !important;
+  }
+  
+  .dark-mode .bg-light {
+    background-color: #6c757d !important;
+  }
+  .sidebar-heading {
+    padding: 20px;
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  
+  .list-group-item {
+    border: none;
+    transition: background-color 0.3s;
+  }
+  
+  .list-group-item:hover {
+    background-color: #495057;
+  }
+  
+  .list-group-item-action.bg-danger:hover {
+    background-color: #c82333; /* Darker red on hover */
+  }
+  
